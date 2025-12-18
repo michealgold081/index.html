@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Bootstrap Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* card hover pop effect */
+    .offer-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+    .offer-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+  
+<body class="d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" id="homeLink">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="linkItem">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="dropdownLink">Dropdown</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-auto">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <main class="flex-grow-1">
+    <h1 class="text-center mt-5">Nos Offres</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, veritatis aspernatur?</p>
+
+    <div class="container py-4">
+      <div class="row justify-content-center g-3">
+        <div class="col-auto">
+          <div class="card border-primary offer-card" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-primary">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text.</p>
+              <div class="text-center">
+                <button class="btn btn-primary">Centered Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-auto">
+          <div class="card border-secondary offer-card" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-secondary">
+              <h5 class="card-title">Secondary card title</h5>
+              <p class="card-text">Some quick example text.</p>
+              <div class="text-center">
+                <button class="btn btn-primary">Centered Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white p-4 text-center mt-auto">
+    © 2025 Copyright
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
